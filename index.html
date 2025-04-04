@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD con PHP y JSON</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD con PHP y JSON</h1>
+        <div id="form-container">
+            <h2>Añadir/Actualizar Ítem</h2>
+            <form id="item-form">
+                <input type="hidden" id="item-id">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" placeholder="Nombre del ítem" required>
+                <label for="description">Descripción:</label>
+                <textarea id="description" placeholder="Descripción del ítem" required></textarea>
+                <button type="submit">Guardar</button>
+            </form>
+        </div>
+
+        <div id="items-container">
+            <h2>Lista de Ítems</h2>
+            <ul id="items-list"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
